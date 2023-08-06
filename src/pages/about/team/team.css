@@ -1,0 +1,75 @@
+.team {
+  margin: 90px 0;
+}
+@media screen and (max-width: 768px) {
+  .team {
+    margin: 40px 0;
+  }
+}
+.team .team__title, .team .team__text {
+  text-align: center;
+}
+.team .team__title {
+  margin-bottom: 30px;
+}
+.team .team__text {
+  width: 40%;
+  margin: 30px auto;
+}
+@media screen and (max-width: 768px) {
+  .team .team__text {
+    width: 100%;
+  }
+}
+.team .team__members {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .team .team__members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .team .team__members {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    justify-items: center;
+  }
+}
+.team .team__members .team__member .team__member__img {
+  border-radius: 50%;
+}
+@media screen and (max-width: 500px) {
+  .team .team__members .team__member .team__member__img {
+    max-width: 300px;
+  }
+}
+.team .team__members h3, .team .team__members p {
+  text-align: center;
+}
+.team .team__members h3 {
+  font-size: 25px;
+  margin-bottom: 7px;
+}
+.team .team__members p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.team .team__members .socialMedia {
+  display: flex;
+  justify-content: center;
+}
+.team .team__members .socialMedia a {
+  margin-right: 15px;
+}
+.team .team__members .socialMedia a:hover {
+  transform: scale(1.3);
+}
+.team .team__members .socialMedia a img {
+  width: 30px;
+}
+
+/*# sourceMappingURL=team.css.map */

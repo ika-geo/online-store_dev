@@ -1,0 +1,50 @@
+.weAre {
+  margin: 90px 0;
+}
+@media screen and (max-width: 768px) {
+  .weAre {
+    margin: 40px 0;
+  }
+}
+.weAre .weAre__block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .weAre .weAre__block {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.weAre .weAre__block .weAre__main {
+  text-align: center;
+}
+.weAre .weAre__block .weAre__main * {
+  margin-bottom: 20px;
+  font-family: "system-ui";
+}
+.weAre .weAre__block .weAre__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .weAre .weAre__block .weAre__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.weAre .weAre__block .weAre__list li {
+  display: flex;
+  margin-right: 15px;
+}
+.weAre .weAre__block .weAre__list li .weAre__List__img {
+  min-width: 40px;
+  max-width: 40px;
+  margin-right: 15px;
+}
+.weAre .weAre__block .weAre__list li .weAre__List__text h3 {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=weAre.css.map */

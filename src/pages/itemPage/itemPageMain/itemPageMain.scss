@@ -1,0 +1,43 @@
+.itemPageMain{
+  margin: 90px 0;
+  @media screen and (max-width: 768px){
+    margin: 40px 0;
+  }
+  .itemPageMain__block{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: start;
+    @media screen and (max-width: 768px){
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info__block{
+      .itemName{
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        @media screen and (max-width: 768px){
+          margin-bottom: 15px;
+        }
+      }
+      .price{
+        margin-bottom: 30px;
+        .actualPrice{
+          font-size: 25px;
+          font-weight: bold;
+          color: #2f4799;
+        }
+      }
+
+      .quantity{
+        margin-bottom: 30px;
+        .quantity__pcs{
+          font-weight: bold;
+          font-size: 120%;
+        }
+      }
+
+    }
+
+  }
+}

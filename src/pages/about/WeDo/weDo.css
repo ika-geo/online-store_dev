@@ -1,0 +1,58 @@
+.weDo {
+  margin: 90px 0;
+}
+@media screen and (max-width: 768px) {
+  .weDo {
+    margin: 40px 0;
+  }
+}
+.weDo .weDo__block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .weDo .weDo__block {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.weDo .weDo__block .weDo__info {
+  margin: 20px;
+}
+@media screen and (max-width: 768px) {
+  .weDo .weDo__block .weDo__info {
+    margin: unset;
+  }
+}
+.weDo .weDo__block .weDo__info .weDo__title {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-family: "system-ui";
+}
+@media screen and (max-width: 768px) {
+  .weDo .weDo__block .weDo__info .weDo__title {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+.weDo .weDo__block .weDo__info .weDo__text {
+  margin-bottom: 40px;
+}
+.weDo .weDo__block .weDo__info .weDo__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 30px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .weDo .weDo__block .weDo__info .weDo__list {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 15px;
+  }
+}
+.weDo .weDo__block .weDo__info .weDo__list li {
+  list-style: disc;
+}
+
+/*# sourceMappingURL=weDo.css.map */

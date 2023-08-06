@@ -1,0 +1,93 @@
+footer {
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 10px 0;
+  }
+}
+footer .footer__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  footer .footer__block .footerGroup {
+    width: 100%;
+    text-align: center;
+  }
+}
+footer .footer__block .footerGroup {
+  margin-bottom: 40px;
+  min-width: 200px;
+}
+@media screen and (max-width: 768px) {
+  footer .footer__block .footerGroup {
+    margin-bottom: 28px;
+  }
+}
+footer .footer__block .footerGroup .footerGroup__title {
+  font-weight: bold;
+}
+footer .footer__block .footerGroup:not(:last-child) {
+  margin-right: 15px;
+}
+@media screen and (max-width: 768px) {
+  footer .footer__block .footerGroup:not(:last-child) {
+    margin-right: unset;
+  }
+}
+footer .footer__block .footerGroup .footerGroup__title {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  footer .footer__block .footerGroup .footerGroup__title {
+    margin-bottom: 15px;
+  }
+}
+footer .footer__block .footerGroup li {
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  footer .footer__block .footerGroup li {
+    margin-bottom: 7px;
+  }
+}
+footer .footer__block .footerGroup li a {
+  color: white;
+}
+footer .footer__block .footerGroup li a:hover {
+  color: pink;
+}
+footer .footer__block .footer__subscribe input {
+  background-color: gray;
+  color: white;
+  outline: none;
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 7px;
+  padding: 5px 15px;
+  height: 30px;
+}
+footer .footer__block .footer__subscribe input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+footer .footer__block .footer__subscribe button {
+  background-color: gray;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 7px;
+  transition-duration: 0.3s;
+}
+footer .footer__block .footer__subscribe button:hover {
+  background-color: #c9c9c9;
+  transition-duration: 0.3s;
+}
+
+/*# sourceMappingURL=footer.css.map */

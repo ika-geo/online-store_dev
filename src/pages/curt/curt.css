@@ -1,0 +1,33 @@
+.curt table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 15px;
+}
+.curt table td, .curt table th {
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .curt table td, .curt table th {
+    text-align: unset;
+  }
+}
+@media screen and (max-width: 600px) {
+  .curt thead {
+    display: none;
+  }
+  .curt table, .curt tr, .curt td {
+    display: block;
+  }
+  .curt tr {
+    border-bottom: 2px solid #9b9b9b;
+    margin: 40px 0;
+  }
+  .curt tr td {
+    margin-bottom: 20px;
+  }
+}
+.curt .sum {
+  text-align: right;
+}
+
+/*# sourceMappingURL=curt.css.map */

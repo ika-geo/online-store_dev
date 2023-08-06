@@ -1,0 +1,35 @@
+.priceFilter {
+  margin-bottom: 50px;
+}
+.priceFilter h2 {
+  margin-bottom: 15px;
+}
+.priceFilter input[type=number] {
+  width: 70px;
+  margin-right: 20px;
+  padding: 10px 10px;
+}
+.priceFilter input[type=number]::placeholder {
+  color: rgba(128, 128, 128, 0.6);
+}
+.priceFilter .reset {
+  color: red;
+  cursor: pointer;
+  margin-left: -15px;
+  font-weight: bolder;
+}
+.priceFilter input[type=button] {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ababab;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.priceFilter input[type=button]:hover {
+  background-color: pink;
+}
+
+/*# sourceMappingURL=priceFilter.css.map */

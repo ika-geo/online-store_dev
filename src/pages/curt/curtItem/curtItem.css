@@ -1,0 +1,55 @@
+.itemInCurt {
+  border-spacing: 0 20px;
+}
+.itemInCurt .itemImg {
+  width: 30%;
+}
+@media screen and (max-width: 600px) {
+  .itemInCurt .itemImg {
+    width: unset;
+  }
+}
+.itemInCurt .itemImg img {
+  max-width: 80px;
+}
+@media screen and (max-width: 600px) {
+  .itemInCurt .itemImg img {
+    max-width: 100%;
+  }
+}
+.itemInCurt .itemTitle {
+  max-width: 80px;
+}
+.itemInCurt .itemTitle a:hover {
+  color: pink;
+}
+.itemInCurt .itemPrice {
+  font-weight: bold;
+}
+.itemInCurt .InCurt {
+  user-select: none;
+}
+.itemInCurt .InCurt .itemMinus, .itemInCurt .InCurt .itemPlus {
+  padding: 8px 13px;
+  background-color: pink;
+  border-radius: 5px;
+  margin: 15px;
+  cursor: pointer;
+}
+.itemInCurt .InCurt .itemMinus.max, .itemInCurt .InCurt .itemMinus.min, .itemInCurt .InCurt .itemPlus.max, .itemInCurt .InCurt .itemPlus.min {
+  background-color: #cbcbcb;
+  pointer-events: none;
+}
+.itemInCurt .itemDelete span {
+  background-color: #ff7690;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.itemInCurt .itemDelete span:hover {
+  box-shadow: 0 0 15px 1px #ff3e61;
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=curtItem.css.map */

@@ -1,0 +1,162 @@
+header {
+  padding: 10px 0;
+  margin-bottom: 40px;
+
+  a{
+    color: black;
+  }
+
+  @media screen and (max-width: 768px){
+    nav{
+      a{
+        color: white;
+      }
+    }
+  }
+
+  *:hover {
+    color: #ffb8b8;
+  }
+
+  .headerBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+
+    .mobileBurgerMenu {
+      z-index: 100;
+      display: none;
+
+      @media screen and (max-width: 768px) {
+        display: block;
+        position: fixed;
+        right: 10px;
+        top: 14px;
+        width: 40px;
+        height: 40px;
+
+        .burgerMenu__Line {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100%;
+          height: 2px;
+          transform: translate(-50%, -50%);
+          background-color: gray;
+          transition-duration: .3s;
+
+
+          &:before, &:after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            top: 0;
+            left: 0;
+            background-color: gray;
+            transition-duration: .3s;
+          }
+
+          &:before{
+            transform: translateY(-10px);
+          }
+
+          &:after{
+            transform: translateY(10px);
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .mobileBurgerMenu.active{
+
+        .burgerMenu__Line{
+          background-color: rgba(0, 0, 0, 0);
+          transition-duration: .3s;
+          &:before{
+            transform: translateY(0) rotate(45deg);
+            transition-duration: .3s;
+          }
+          &:after{
+            transform: translateY(0) rotate(-45deg);
+            transition-duration: .3s;
+          }
+        }
+      }
+    }
+
+
+    .headerBlock > div:not(:last-child) {
+      margin-right: 10px;
+      margin-bottom: 15px;
+    }
+
+    .headerLogo > a {
+      font-family: 'Dancing Script';
+      font-size: 40px;
+    }
+
+    nav {
+      width: 40%;
+
+      .headerNav {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          margin-right: 15px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px){
+
+      nav{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 50;
+        &.active{
+          right: 0;
+        }
+      }
+
+
+      .headerNav{
+        flex-direction: column;
+        align-items: end;
+        margin-top: 50px;
+        margin-right: 50px;
+
+        li{
+          font-size: 150%;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .headerCart {
+      position: relative;
+
+      .cartQuantity{
+        position: absolute;
+        font-size: 18px;
+        font-weight: 900;
+        color: red;
+        top: -13px;
+        left: 20px;
+      }
+       img {
+         width: 30px;
+      }
+    }
+  }
+}
+
+

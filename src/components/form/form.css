@@ -1,0 +1,56 @@
+.contact__block form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 17px;
+}
+@media screen and (max-width: 768px) {
+  .contact__block form {
+    justify-content: center;
+  }
+}
+.contact__block form input:not([type=submit]) {
+  width: 48%;
+  margin-bottom: 15px;
+  padding: 15px 10px;
+  border: 2px solid pink;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .contact__block form input:not([type=submit]) {
+    width: 100%;
+  }
+}
+.contact__block form textarea {
+  width: 100%;
+  height: 200px;
+  margin: 30px 0;
+  padding: 15px 10px;
+  border: 2px solid pink;
+  border-radius: 5px;
+  resize: vertical;
+}
+@media screen and (max-width: 768px) {
+  .contact__block form textarea {
+    margin: 15px 0;
+  }
+}
+.contact__block form input[type=submit] {
+  padding: 15px 20px;
+  border: 2px solid pink;
+  background-color: unset;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact__block form input[type=submit]:hover {
+  background-color: pink;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .contact__block form input[type=submit] {
+    padding: 15px 40px;
+  }
+}
+
+/*# sourceMappingURL=form.css.map */

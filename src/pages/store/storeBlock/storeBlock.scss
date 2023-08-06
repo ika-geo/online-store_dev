@@ -1,0 +1,25 @@
+.items{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 25px;
+  gap: 25px 20px;
+  @media screen and (max-width: 1000px){
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 500px){
+    grid-template-columns: 1fr;
+  }
+
+  .item{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+
+    a{
+      margin-bottom: 15px;
+      &:hover{
+        color: #ffb8b8;
+      }
+    }
+  }
+}

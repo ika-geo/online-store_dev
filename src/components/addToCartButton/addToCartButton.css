@@ -1,0 +1,23 @@
+.addToCart {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.addToCart:hover {
+  background-color: #ffb8b8;
+}
+.addToCart.added {
+  background-color: #54c154;
+  pointer-events: none;
+}
+.addToCart.disabled {
+  background-color: #aaaaaa;
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=addToCartButton.css.map */

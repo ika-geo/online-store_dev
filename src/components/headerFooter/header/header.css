@@ -1,0 +1,134 @@
+header {
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+header a {
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  header nav a {
+    color: white;
+  }
+}
+header *:hover {
+  color: #ffb8b8;
+}
+header .headerBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+header .headerBlock .mobileBurgerMenu {
+  z-index: 100;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  header .headerBlock .mobileBurgerMenu {
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 14px;
+    width: 40px;
+    height: 40px;
+  }
+  header .headerBlock .mobileBurgerMenu .burgerMenu__Line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+    transition-duration: 0.3s;
+  }
+  header .headerBlock .mobileBurgerMenu .burgerMenu__Line:before, header .headerBlock .mobileBurgerMenu .burgerMenu__Line:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    transition-duration: 0.3s;
+  }
+  header .headerBlock .mobileBurgerMenu .burgerMenu__Line:before {
+    transform: translateY(-10px);
+  }
+  header .headerBlock .mobileBurgerMenu .burgerMenu__Line:after {
+    transform: translateY(10px);
+  }
+}
+@media screen and (max-width: 768px) {
+  header .headerBlock .mobileBurgerMenu.active .burgerMenu__Line {
+    background-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+  }
+  header .headerBlock .mobileBurgerMenu.active .burgerMenu__Line:before {
+    transform: translateY(0) rotate(45deg);
+    transition-duration: 0.3s;
+  }
+  header .headerBlock .mobileBurgerMenu.active .burgerMenu__Line:after {
+    transform: translateY(0) rotate(-45deg);
+    transition-duration: 0.3s;
+  }
+}
+header .headerBlock .headerBlock > div:not(:last-child) {
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+header .headerBlock .headerLogo > a {
+  font-family: "Dancing Script";
+  font-size: 40px;
+}
+header .headerBlock nav {
+  width: 40%;
+}
+header .headerBlock nav .headerNav {
+  display: flex;
+  justify-content: space-between;
+}
+header .headerBlock nav .headerNav li {
+  margin-right: 15px;
+}
+@media screen and (max-width: 768px) {
+  header .headerBlock nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 50;
+  }
+  header .headerBlock nav.active {
+    right: 0;
+  }
+  header .headerBlock .headerNav {
+    flex-direction: column;
+    align-items: end;
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+  header .headerBlock .headerNav li {
+    font-size: 150%;
+    margin-bottom: 15px;
+  }
+}
+header .headerBlock .headerCart {
+  position: relative;
+}
+header .headerBlock .headerCart .cartQuantity {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 900;
+  color: red;
+  top: -13px;
+  left: 20px;
+}
+header .headerBlock .headerCart img {
+  width: 30px;
+}
+
+/*# sourceMappingURL=header.css.map */

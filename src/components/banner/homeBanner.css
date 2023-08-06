@@ -1,0 +1,31 @@
+.slick-dots {
+  bottom: 5px;
+  left: 5px;
+  text-align: unset;
+  width: unset;
+}
+.slick-dots li button:before {
+  font-size: 9px;
+}
+
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
+.banner {
+  margin: 0 auto;
+  width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=homeBanner.css.map */

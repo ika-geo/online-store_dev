@@ -1,0 +1,29 @@
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 25px;
+  gap: 25px 20px;
+}
+@media screen and (max-width: 1000px) {
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .items {
+    grid-template-columns: 1fr;
+  }
+}
+.items .item {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+}
+.items .item a {
+  margin-bottom: 15px;
+}
+.items .item a:hover {
+  color: #ffb8b8;
+}
+
+/*# sourceMappingURL=storeBlock.css.map */

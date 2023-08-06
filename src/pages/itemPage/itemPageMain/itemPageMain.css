@@ -1,0 +1,45 @@
+.itemPageMain {
+  margin: 90px 0;
+}
+@media screen and (max-width: 768px) {
+  .itemPageMain {
+    margin: 40px 0;
+  }
+}
+.itemPageMain .itemPageMain__block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+@media screen and (max-width: 768px) {
+  .itemPageMain .itemPageMain__block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.itemPageMain .itemPageMain__block .info__block .itemName {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .itemPageMain .itemPageMain__block .info__block .itemName {
+    margin-bottom: 15px;
+  }
+}
+.itemPageMain .itemPageMain__block .info__block .price {
+  margin-bottom: 30px;
+}
+.itemPageMain .itemPageMain__block .info__block .price .actualPrice {
+  font-size: 25px;
+  font-weight: bold;
+  color: #2f4799;
+}
+.itemPageMain .itemPageMain__block .info__block .quantity {
+  margin-bottom: 30px;
+}
+.itemPageMain .itemPageMain__block .info__block .quantity .quantity__pcs {
+  font-weight: bold;
+  font-size: 120%;
+}
+
+/*# sourceMappingURL=itemPageMain.css.map */
